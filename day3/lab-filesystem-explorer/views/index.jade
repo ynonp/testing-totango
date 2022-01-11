@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Directory #{currentDirectory}
+  ul
+    each val in entries
+      li
+        form(method="POST", action="#{val.link}")
+          input(type="hidden", name="_method", value="DELETE")
+          input(type="submit", value="Delete")
+
+        if val.type === 'D'
+          a(href="#{val.link}") [#{val.type}] #{val.name}
+        else
+          span [#{val.type}] #{val.name}
+

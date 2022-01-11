@@ -1,0 +1,29 @@
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.main-image {
+}
+
+.thumbnails {
+  max-width: 15rem;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
+  border: 2px solid pink;
+  cursor: pointer;
+}
+
+
