@@ -4,7 +4,27 @@ import './App.css';
 const X_PLAYER = "X"
 const O_PLAYER = "O"
 
-const TicTacToeBoard = ({ currentBoard, onPlayerMove, disableAll }) => {
+/**
+ *
+ * 1. Verify functionality:
+ *  choose 3 from Denis and Chava's list
+ *
+ * 2. Bug hunting:
+ *  analyzeBoard - check some winning/losing conditions
+ *
+ * 3. Learn about the code
+ *
+ * 4. Documentation
+ *
+ * 5. Explore
+ *
+ * 6. Report bugs
+ *
+ */
+// Deciding what to test
+// 1. Denis and Chava - Great functionality testing
+
+export const TicTacToeBoard = ({ currentBoard, onPlayerMove, disableAll }) => {
   const square = i => {
     const player = currentBoard[i]
     return (
@@ -96,6 +116,11 @@ const STREAKS = [
   [2, 4, 6],
 ]
 
+/**
+ * Bug hunting - when it fails I KNOW where to go
+ * expect(analyzeBoard([...])).toEqual('x')
+ */
+
 // a board is a 9 element array representing the state of the board
 // each element representing a square occupied by any of the ff: ['x', 'o', null]
 const analyzeBoard = board => {
@@ -124,6 +149,7 @@ const INITIAL_STATE = {
   currentSnapshotId: 0,
 }
 
+// We only tested app
 const App = () => {
   const [state, setState] = useState(INITIAL_STATE);
 
