@@ -4,7 +4,7 @@
 
 ## Add supertest and jest
 
-1. Add supertest and jest to the project
+1. Add supertest and jest and jsdom to the project
 
 2. Test the main route works
 
@@ -37,3 +37,7 @@
 1. Create multiple test files, each test file will create a specific file in "./start" folder and delete it. Run the tests with "npx jest --no-cache".
 
 2. Did all the tests pass? How would you modify the code to fix it?
+
+
+
+
